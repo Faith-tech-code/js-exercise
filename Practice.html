@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faith</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blueviolet;
+        border: 1px solid blueviolet;
+        line-height: 1.5;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      h2 {
+        text-align: center;
+        font-weight: 500;
+
+
+        font-size: 23px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+      p {
+        text-align: left;
+        line-height: 1.5;
+
+        font-size: 17px;
+        margin: 5px 0 10px;
+      }
+      .a {
+        display: block;
+        margin-top: 30px;
+        text-decoration: none;
+      }
+      .a {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid blueviolet;
+        background: blueviolet;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        font-size: 14px;
+        color: gray;
+        margin-top: 40px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 5px 60px;
+        background: linear-gradient(to bottom, lightskyblue, lightcyan);
+        border-radius: 10px;
+      }
+      body {
+        background-color: #f0f0f0;
+        background: linear-gradient(to bottom right, #f0f0f0, #c0c0c0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I Love Coding!</h1>
+      <h2>
+        In a world of <em> <mark>code</mark> </em>, I've found my
+        <em> <mark>passion.</mark> </em>
+      </h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/824/original/1751880692909.jpeg?1756261962"
+        alt="Faith" />
+      <hr class="b" />
+      <p>
+        I <span style="color: red">love</span> coding because it brings together
+        creativity and logic to solve real-world problems. Every line of code is
+        an opportunity to design, build, and bring ideas to life in ways that
+        can make a meaningful difference. Coding constantly challenges me with
+        new concepts and technologies, ensuring that I am always learning,
+        growing, and discovering new possibilities.
+      </p>
+      <p>
+        My journey into tech is still new, as I am
+        <strong>transitioning</strong> from
+        <strong>Human Resource Management</strong> into the world of coding and
+        technology. For years, my work in HR gave me insight into people,
+        systems, and how to create environments where others could thrive. Over
+        time, I realized that technology has the power to do the same on a much
+        larger scale—streamlining processes, connecting communities, and
+        offering solutions that make work and life better. This inspired me to
+        step out of my comfort zone and begin my transition into tech.
+      </p>
+      <p>
+        Coding allows me to take the skills I built in HR—problem-solving,
+        empathy, organization—and apply them in a new way: developing tools and
+        solutions that are not only functional but impactful. This career shift
+        represents my passion for growth, adaptability, and innovation, and it
+        excites me to know that the possibilities are limitless.
+      </p>
+      <p>
+        To me, coding is more than a skill—it is a journey of discovery,
+        resilience, and creativity. It has taught me patience, critical
+        thinking, and persistence, while also introducing me to a supportive
+        community like <a href="https://www.shecodes.io/">SheCodes</a>, where
+        collaboration and encouragement make the experience even more
+        fulfilling. I see coding as a craft that empowers me to dream, build,
+        and contribute to a future shaped by technology.
+      </p>
+      <hr />
+      <a class="a" href="https://www.linkedin.com/in/faith-akiror-44a9a6139/"
+        >Learn more about me on LinkedIn</a
+      >
+      <button id="linkedin-button" class="connect-button">
+        Let's connect!
+      </button>
+      <p class="footer">
+        This Page was built by
+        <a href="https://www.linkedin.com/in/faith-akiror-44a9a6139/"
+          >Faith Akiror</a
+        >
+      </p>
+    </div>
+    <script>
+      function connectButton() {
+        let name = prompt("What is your first name?");
+        let email = prompt("What is your email address?");
+        let profile = prompt("Do you have a LinkedIn profile?");
+        if (profile === "yes") {
+          alert("Please Let's Connect");
+        } else {
+          alert("No worries! You can connect with me via email.");
+        }
+      }
+      let linkedinButton = document.getElementById("linkedin-button");
+      linkedinButton.addEventListener("click", connectButton);
+    </script>
+  </body>
+</html>

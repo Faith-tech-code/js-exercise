@@ -1,27 +1,103 @@
- 
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Quiz App</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="app"> 
-            <h1>Simple Quiz</h1>
-            <div class="quiz">
-                <h2 id="question">Question goes here</h2>
-                <div id="answer-buttons">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
-                </div>
-                <button id="next-btn">Next</button>
-            </div>
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+    <style>
+        a {
+          text-decoration: none;
+          
+        }
+        a:hover {
+          text-decoration: underline;
+        }
 
-        <script src="script.js"></script>
+      li {
+        display: inline;
+        margin: 0 15px;
+        
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: #885df1;
+        color: white;
+        border: 1px solid #885df1;
+        padding: 15px 20px;
+        font-size: 16px;
+        border-radius: 30px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+        transition: all 300ms ease-in-out;
+      }
+      button:hover {
+        background-color: white;
+        color: #885df1;
+        cursor: pointer;
+        box-shadow: 4px 4px 10px gray;
+      }
+      p {
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      body {
+        background-color: #f5f0fe;
+      }
+      h1 {
+        color: #885df1;
+        text-decoration: underline;
+        font-size: 30px;
+        font-weight: thin;
+        text-align: center;
+      }
+      h2 {
+        color: #272044;
+        text-align: center;
+        font-weight: normal;
+      }
+      li:nth-child(1) a {
+        color: blue;
+      }
 
+      li:nth-child(2) a {
+        color: red;
+      }
 
-    </body>
+      li:nth-child(3) a {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SheCodes</h1>
+    <h2>Coding Workshop</h2>
+    <button>Apply Now</button>
+    <ul>
+      <li class="a">
+        <a href="https://www.shecodes.io" target="_blank"> Corders </a>
+      </li>
+      <li class="b">
+        <a href="https://www.shecodes.io/workshops" target="_blank">
+          Courses
+        </a>
+      </li>
+      <li class="c">
+        <a href="https://www.shecodes.io/stories" target="_blank"> Stories </a>
+      </li>
+    </ul>
+    <hr />
+    <p>More Info</p>
+    <img
+      src="https://media.licdn.com/dms/image/v2/D4D22AQGhgievyo0vbQ/feedshare-shrink_800/B4DZfkOcq1GYAg-/0/1751880692909?e=1758758400&v=beta&t=O3B1M6W4sazc9VS9pSdjSAlSNDs-2fyewIyHqqDBwEM"
+      width="400" />
+      <p> <span style="color: #885df1">Email:</span> hello@shecodes.io  <span style="color: #885df1;">Instagram:</span> @shecodesio</p>
+  </body>
 </html>
