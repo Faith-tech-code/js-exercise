@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traveling 🌍 🏍️ 🚙 🚊 🛳️ 🛫 My Hobby</title>
+    <style>
+      .container {
+        max-width: 600px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      body {
+       background: linear-gradient(to right, #ddd6f3, #faaca8);
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+      button {
+        display: block;
+        margin: 0px auto;
+        border: 1px solid plum;
+        background-color: white;
+        font-size: 24px;
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        background: plum;
+      }
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: white;
+      }
+      .theme-button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid black;
+        background: black;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 12px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      .theme-button:hover {
+        opacity: 0.9;
+        color: black;
+        background: white;
+      }
+      .image-1 {
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+      .image-1:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(1.5);
+      }
+      .Dark {
+        background: linear-gradient(to right, #000000, #434343);
+        color: white;
+      }
+      .Dark .container {
+        background-color: grey;
+        background: rgba(red, green, blue, alpha);
+      }
+      .Dark a {
+        color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>TRAVELING</h1>
+      <h2>
+        My Favorite Hobby. <br />
+        A Journey of Discovery and Connection
+      </h2>
+      <img
+        class="image-1"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/904/original/trav1.jpg?1756349257"
+        alt="" />
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/903/original/trav2.jpg?1756349244"
+          alt=""
+          height="200px" />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/902/original/trav3.jpg?1756349233"
+          alt=""
+          height="200px" />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/906/original/trav6.jpg?1756352672"
+          alt=""
+          height="200px" />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/900/original/trav5.jpg?1756349190"
+          alt=""
+          height="200px" />
+      </div>
+      <p>
+        Traveling is the act of moving between distant geographical locations
+        using various means like planes, trains, cars, or on foot, and it offers
+        benefits such as personal growth, cultural awareness, and improved
+        cognitive flexibility. The spelling can be either "traveling" (American
+        English) or "travelling" (British English). To travel, you should plan
+        your itinerary, pack appropriately for the destination and activities,
+        and book your transportation in advance
+      </p>
+      <button>Learn More About Dancing.</button>
+    </div>
+    <footer>
+      Coded with 💕 by <a href="https://www.shecodes.io/">FAITH AKIROR</a>
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("Dark")) body.classList.remove("Dark");
+        else body.classList.add("Dark");
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
